@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "96223861262",
+    "firebase_url": "https://domestic-89130.firebaseio.com",
+    "project_id": "domestic-89130",
+    "storage_bucket": "domestic-89130.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96223861262:android:6bead1ff3e368771",
+        "android_client_info": {
+          "package_name": "com.pronatec.domestic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96223861262-86j8q1qbj72imou4tnai7eairuo6gvmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd8t_8ePkDFrH_U_oD81_MgJ73wD-ftNQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
