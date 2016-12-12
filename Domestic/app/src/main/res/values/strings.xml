@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Domestic</string>
+
+    <string-array name="consumo">
+
+     <item>115KW</item>
+        <item>220KW</item>
+
+    </string-array>
+</resources>
