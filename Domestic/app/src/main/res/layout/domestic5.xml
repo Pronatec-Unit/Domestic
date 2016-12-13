@@ -32,27 +32,17 @@
         android:id="@+id/button7"
         android:layout_below="@+id/textView5"
         android:layout_alignStart="@+id/textView5"
-        android:textSize="9dp" />
-
-    <Button
-        android:text="Digite o Consumo"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:id="@+id/button8"
-        android:layout_below="@+id/button7"
-        android:layout_alignStart="@+id/button7"
-        android:textSize="8dp" />
+        android:textSize="10sp" />
 
     <Button
         android:text="Resultado"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:id="@+id/button9"
+        android:id="@+id/resultado"
         android:layout_below="@+id/button8"
         android:layout_alignStart="@+id/button8"
-        android:textSize="9dp" />
+        android:textSize="10sp" />
 
     <EditText
         android:background="#fff"
@@ -60,8 +50,8 @@
         android:layout_height="36dp"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText8"
-        android:layout_alignBottom="@+id/button9"
+        android:id="@+id/lblResultado"
+        android:layout_alignBottom="@+id/resultado"
         android:layout_alignEnd="@+id/textView5" />
 
     <EditText
@@ -70,9 +60,9 @@
         android:layout_height="36dp"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText7"
+        android:id="@+id/lblConsumo"
         android:layout_alignBottom="@+id/button8"
-        android:layout_alignStart="@+id/editText8" />
+        android:layout_alignStart="@+id/lblResultado" />
 
     <EditText
         android:background="#fff"
@@ -80,7 +70,7 @@
         android:layout_height="36dp"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText6"
+        android:id="@+id/lblValor"
         android:layout_alignBaseline="@+id/button7"
         android:layout_alignBottom="@+id/button7"
         android:layout_alignEnd="@+id/textView5" />
@@ -90,6 +80,16 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/gas"
         android:id="@+id/imageView4"
-        android:layout_below="@+id/button9"
+        android:layout_below="@+id/resultado"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Digite o Consumo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button8"
+        android:textSize="10sp"
+        android:layout_below="@+id/button7"
+        android:layout_alignStart="@+id/button7" />
 </RelativeLayout>

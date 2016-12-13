@@ -32,4 +32,7 @@ public class Domestic extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
 
     }
+    public void onBackPressed(){
+        finish();
+    }
 }

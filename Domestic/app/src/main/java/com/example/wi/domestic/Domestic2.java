@@ -60,4 +60,9 @@ public class Domestic2 extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed(){
+        Intent intent = new Intent(Domestic2.this, Domestic.class);
+        startActivity(intent);
+        finish();
+    }
 }
