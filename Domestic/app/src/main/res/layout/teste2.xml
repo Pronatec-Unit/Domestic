@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Domestic"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:background="#fff"
+        app:srcCompat="@drawable/agua2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="140dp"
+        android:id="@+id/imgAgua"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:clickable="true" />
+
+    <Button
+        android:text="ÁGUA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgAgua"
+        android:layout_toEndOf="@+id/imgAgua"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/btn_Agua" />
+
+    <ImageView
+        android:background="#fff"
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/lp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/imgLuz"
+        android:layout_below="@+id/imgAgua"
+        android:layout_alignStart="@+id/imgAgua"
+        android:layout_height="80dp"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/casar"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:background="#fff"
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/comb"
+        android:id="@+id/imgCombustivel"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imgLuz"
+        android:layout_alignStart="@+id/imgLuz"
+        android:layout_marginTop="29dp"
+        android:clickable="true" />
+
+    <Button
+        android:text="ENERGIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Energia"
+        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/imgLuz"
+        android:layout_alignStart="@+id/btn_Agua" />
+
+    <Button
+        android:text="COMBUSTÍVEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_Comb"
+        android:layout_alignTop="@+id/imgCombustivel"
+        android:layout_alignStart="@+id/btn_Energia" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_launcher"
+        android:id="@+id/btn_Back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgCombustivel" />
+
+</RelativeLayout>

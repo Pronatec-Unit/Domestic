@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:text="COMSUMO DE ÁGUA"
+        android:text="Consumo de Agua"
         android:textColor="#fff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,16 +16,6 @@
         android:textSize="25dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Resultado"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button4"
-        android:layout_alignEnd="@+id/button4"
-        android:layout_marginTop="18dp"
-        android:id="@+id/btnResultado"
-        android:textSize="12sp" />
 
     <ImageButton
         android:layout_width="60dp"
@@ -36,16 +26,6 @@
         android:layout_marginBottom="13dp"
         android:id="@+id/btn_vol" />
 
-    <EditText
-        android:background="#fff"
-        android:layout_width="150dp"
-        android:layout_height="36dp"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/lblResultado"
-        android:layout_alignBottom="@+id/btnResultado"
-        android:layout_alignStart="@+id/gastoMes" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,16 +35,6 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="18dp" />
 
-    <Button
-        android:text="Consumo"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:id="@+id/button4"
-        android:textSize="12sp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/imageView3" />
-
     <EditText
         android:background="#fff"
         android:layout_width="150dp"
@@ -73,9 +43,56 @@
         android:id="@+id/gastoMes"
         android:textSize="18sp"
         android:layout_height="36dp"
-        android:layout_marginEnd="22dp"
-        android:layout_alignBaseline="@+id/button4"
-        android:layout_alignBottom="@+id/button4"
-        android:layout_alignEnd="@+id/imageView3" />
+        android:layout_alignBottom="@+id/btnConsumo"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/btnConsumo"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:background="#fff"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:inputType="none"
+        android:id="@+id/lblResultado"
+        android:layout_alignBottom="@+id/btnResultado"
+        android:layout_alignStart="@+id/gastoMes"
+        android:ems="10"
+        android:layout_alignTop="@+id/btnResultado"
+        android:enabled="false"
+        android:textColor="@android:color/black"
+        android:focusable="false" />
+
+    <Button
+        android:text="Consumo / m³"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnConsumo"
+        android:textSize="14sp"
+        android:layout_width="150dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/btnResultado"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold|italic"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:text="Resultado"
+        android:id="@+id/btnResultado"
+        android:textSize="14sp"
+        android:ems="15"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@color/colorPrimary"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/background_light"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/btnConsumo"
+        android:layout_toStartOf="@+id/lblResultado" />
 
 </RelativeLayout>

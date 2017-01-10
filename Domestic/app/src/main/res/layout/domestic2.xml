@@ -16,37 +16,6 @@
         android:layout_alignParentStart="true" />
 
     <ImageView
-        android:background="#fff"
-        app:srcCompat="@drawable/agua2"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="140dp"
-        android:id="@+id/imageView6"
-        android:layout_width="100dp"
-        android:layout_height="80dp" />
-
-    <Button
-        android:text="ÁGUA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_toEndOf="@+id/imageView6"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="22dp"
-        android:id="@+id/btn_Agua" />
-
-    <ImageView
-        android:background="#fff"
-        android:layout_width="100dp"
-        app:srcCompat="@drawable/lp"
-        android:layout_marginTop="22dp"
-        android:id="@+id/imageView7"
-        android:layout_below="@+id/imageView6"
-        android:layout_alignStart="@+id/imageView6"
-        android:layout_height="80dp" />
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/casar"
@@ -54,33 +23,31 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:background="#fff"
-        android:layout_width="100dp"
-        app:srcCompat="@drawable/comb"
-        android:id="@+id/imageView9"
-        android:layout_height="80dp"
-        android:layout_below="@+id/imageView7"
-        android:layout_alignStart="@+id/imageView7"
-        android:layout_marginTop="29dp" />
-
     <Button
         android:text="ENERGIA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_Energia"
-        android:layout_marginTop="16dp"
-        android:layout_alignTop="@+id/imageView7"
-        android:layout_alignStart="@+id/btn_Agua" />
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:background="?android:attr/colorEdgeEffect"
+        android:layout_marginEnd="8dp"
+        android:layout_alignBottom="@+id/imgLuz"
+        android:layout_alignEnd="@+id/btn_Comb"
+        android:textColor="@android:color/background_light" />
 
-    <Button
-        android:text="COMBUSTÍVEL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/btn_Comb"
-        android:layout_alignTop="@+id/imageView9"
-        android:layout_alignStart="@+id/btn_Energia" />
+    <ImageView
+        app:srcCompat="@drawable/agua"
+        android:id="@+id/imgAgua"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_toStartOf="@+id/imageView"
+        android:clickable="true" />
 
     <ImageButton
         android:layout_width="60dp"
@@ -88,14 +55,64 @@
         app:srcCompat="@drawable/ic_launcher"
         android:id="@+id/btn_Back"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageView9" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
 
-    <ImageButton
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/dsdsd"
-        android:id="@+id/btn_Next"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/btn_Comb" />
+    <ImageView
+        android:background="#fff"
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/comb"
+        android:id="@+id/imgCombustivel"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:layout_below="@+id/imgLuz"
+        android:layout_alignStart="@+id/imgLuz"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:text="COMBUSTÍVEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Comb"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:background="@android:color/background_light"
+        android:layout_marginLeft="165dp"
+        android:layout_alignBottom="@+id/imgCombustivel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="9dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/lp"
+        android:id="@+id/imgLuz"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/imgAgua"
+        android:layout_alignStart="@+id/imgAgua"
+        android:clickable="true" />
+
+    <Button
+        android:text="ÁGUA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Agua"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:textStyle="normal|bold|italic"
+        android:textSize="18sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/imgAgua"
+        android:layout_alignEnd="@+id/btn_Energia"
+        android:layout_marginBottom="7dp" />
 
 </RelativeLayout>
