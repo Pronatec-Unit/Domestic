@@ -43,9 +43,7 @@
         android:id="@+id/lblConsumo"
         android:layout_alignBottom="@+id/btnConsumo"
         android:layout_alignStart="@+id/lblValor"
-        android:layout_alignTop="@+id/btnConsumo"
-        android:focusable="false"
-        android:filterTouchesWhenObscured="false" />
+        android:layout_alignTop="@+id/btnConsumo" />
 
     <EditText
         android:background="#fff"
@@ -56,7 +54,6 @@
         android:layout_above="@+id/imageView4"
         android:layout_alignStart="@+id/lblConsumo"
         android:layout_alignTop="@+id/resultado"
-        android:focusable="false"
         android:enabled="false"
         android:inputType="none" />
 
